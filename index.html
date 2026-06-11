@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivea — Product Manager & Systems Thinker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 手機版頂部導覽 -->
+  <header class="mobile-header">
+    <span class="mobile-logo">Nivea</span>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- 左側 Sidebar -->
+  <aside class="sidebar" id="sidebar">
+
+    <!-- 頂部：個人介紹 -->
+    <div class="sidebar-intro">
+      <div class="sidebar-avatar">
+        <div class="avatar-placeholder">NL</div>
+      </div>
+      <h2 class="sidebar-heading">
+        <span class="lang-zh">嗨！我是 Nivea<br>具系統思維的產品經理</span>
+        <span class="lang-en">Hey! I'm Nivea<br>Product Manager & Systems Thinker</span>
+      </h2>
+      <p class="sidebar-sub">
+        <span class="lang-zh">5年＋產品設計與管理經驗，擅長在商業、用戶與產品之間取得平衡，把複雜的商業問題，轉譯成可被執行且能落地的產品。</span>
+        <span class="lang-en">5+ years in product design and management. Skilled at balancing business, user, and product needs — translating complex business problems into executable solutions that actually ship.</span>
+      </p>
+    </div>
+
+    <!-- 底部：導覽 -->
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#work" class="nav-link active" data-section="work"><span class="lang-zh">精選案例</span><span class="lang-en">Work</span></a></li>
+        <li><a href="#about" class="nav-link" data-section="about"><span class="lang-zh">關於我</span><span class="lang-en">About</span></a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience"><span class="lang-zh">經歷</span><span class="lang-en">Experience</span></a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact"><span class="lang-zh">聯絡我</span><span class="lang-en">Contact Me</span></a></li>
+      </ul>
+    </nav>
+
+    <!-- Footer：語言切換 + 社群連結 -->
+    <div class="sidebar-footer">
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnZh">中</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" id="btnEn">EN</button>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="mailto:niveachen423@gmail.com" class="social-link">Email</a>
+      </div>
+      <a href="assets/resume/resume.pdf" class="btn-resume" download>
+        <span class="lang-zh">履歷下載 ↓</span><span class="lang-en">Resume ↓</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- 右側主內容 -->
+  <main class="main-content">
+
+    <!-- 01 Selected Work -->
+    <section class="section section-alt" id="work">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span class="lang-zh">精選案例</span><span class="lang-en">Selected Work</span></h2>
+      </div>
+
+      <div class="work-list">
+
+        <div class="case-card reveal">
+          <div class="case-meta">
+            <span class="case-number">01</span>
+            <span class="case-tag">Payment Operations · Platform Integration</span>
+          </div>
+          <h3 class="case-title">1.4 萬＋廠商後台：從 0 到 1 建置 mo 點金流，讓促銷活動與客訴補償更彈性</h3>
+          <p class="case-desc">
+            打通供應商後台金流，讓 1.4 萬間廠商得以自主購買 mo 點、發起評價加碼活動、補償買家——同時確保三個平台的帳務資料完全一致。
+          </p>
+          <div class="case-details">
+            <span class="case-detail">Role: Lead PM</span>
+            <span class="case-detail">Platform: 供應商後台 × momo</span>
+            <span class="case-detail">2026 Q1</span>
+          </div>
+          <div class="case-insight">
+            <span class="insight-label">Key Decision</span>
+            <span class="insight-text">在沒有任何金流基礎的系統上建立付款流程，選擇先做前期金流研究確立架構方向，再協調三平台資料串接，確保帳務準確性。上線後 150 間廠商完成購買，活動場次達 20+ 場。</span>
+          </div>
+          <a href="cases/mo-points.html" class="case-link"><span class="lang-zh">閱讀案例 →</span><span class="lang-en">Read Case Study →</span></a>
+        </div>
+
+        <div class="case-card reveal">
+          <div class="case-meta">
+            <span class="case-number">02</span>
+            <span class="case-tag">UX Research · User Interview · Healthcare App</span>
+          </div>
+          <h3 class="case-title">3 個月實戰營 × UX 研究：找出照護平台媒合率低的真實原因</h3>
+          <p class="case-desc">
+            平台上線後使用率偏低、媒合率不理想。透過問卷（n=112）與深度訪談（n=6），找出照護者真正的痛點與線上諮詢的信任障礙，產出三個核心洞察與可落地的產品建議。
+          </p>
+          <div class="case-details">
+            <span class="case-detail">Role: UX 研究員 · 組長</span>
+            <span class="case-detail">Platform: Healthcare App</span>
+            <span class="case-detail">2023</span>
+          </div>
+          <div class="case-insight">
+            <span class="insight-label">Key Insight</span>
+            <span class="insight-text">問題不在介面，而在市場教育順序搞錯——照護者根本不知道「線上諮詢護理師」這個選項存在。信任建立之前，轉換策略都是徒勞的。</span>
+          </div>
+          <a href="cases/instacare.html" class="case-link"><span class="lang-zh">閱讀案例 →</span><span class="lang-en">Read Case Study →</span></a>
+        </div>
+
+        <div class="case-card reveal">
+          <div class="case-meta">
+            <span class="case-number">03</span>
+            <span class="case-tag">UX / UI Design · SaaS · 管理系統</span>
+          </div>
+          <h3 class="case-title">步驟縮短 37%、學習時間從 7 分鐘降至 3 分鐘：Live Show Seller 系統優化</h3>
+          <p class="case-desc">
+            系統功能散亂、入口混亂，讓直播賣家操作時手忙腳亂。透過重建資訊架構、整合核心操作流程，讓完成一場直播銷售的步驟從 8 步縮減至 5 步。
+          </p>
+          <div class="case-details">
+            <span class="case-detail">Role: UI/UX Designer · 專案管理</span>
+            <span class="case-detail">Platform: SaaS B2B</span>
+            <span class="case-detail">2022</span>
+          </div>
+          <div class="case-insight">
+            <span class="insight-label">Key Decision</span>
+            <span class="insight-text">將「建立活動」與「加入商品」從兩個獨立入口整合為一條龍流程，並重建資訊架構讓主要操作在三層內完成——操作步驟減少 37%，學習時間從 7 分鐘降至 3 分鐘。</span>
+          </div>
+          <a href="cases/live-show-seller.html" class="case-link"><span class="lang-zh">閱讀案例 →</span><span class="lang-en">Read Case Study →</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 02 About + Expertise & Services（合併） -->
+    <section class="section" id="about">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span class="lang-zh">關於我</span><span class="lang-en">About</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <div class="image-placeholder-text">Your Photo</div>
+          </div>
+        </div>
+        <div class="about-body">
+          <p class="about-lead reveal">
+            <span class="lang-zh">我在商業目標、營運流程與使用者體驗之間搭橋——將複雜的限制轉化為真正能上線的系統。</span><span class="lang-en">I bridge the gap between business goals, operational workflows, and user experience — translating complex constraints into systems that actually ship.</span>
+          </p>
+          <p class="about-text reveal">
+            <span class="lang-zh">我的工作交會於產品策略、營運與跨部門執行。在我主導過的 SaaS 平台產品決策中，挑戰不只是 UX——更需要同時理解訂閱邏輯、付款行為、生命週期分眾與平台限制。</span><span class="lang-en">My work sits at the intersection of product strategy, operations, and cross-functional execution. I've led product decisions on SaaS platforms where the challenge wasn't just UX — it was understanding subscription logic, payment behavior, lifecycle segmentation, and platform constraints all at once.</span>
+          </p>
+          <p class="about-text reveal">
+            <span class="lang-zh">我不只找出使用者需要什麼，還會梳理解決方案背後的商業機制——為什麼可行、需要哪些營運調整、如何在不同團隊間排出執行序。</span><span class="lang-en">I don't just identify what users need. I map the business mechanics behind why a solution is viable, what operational changes it requires, and how to sequence execution across teams.</span>
+          </p>
+          <div class="about-tags reveal">
+            <span class="label-tag">Systems Thinking</span>
+            <span class="label-tag">SaaS</span>
+            <span class="label-tag">Product Operations</span>
+            <span class="label-tag">Data-Informed</span>
+            <span class="label-tag">Cross-functional</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- How I Contribute -->
+      <div class="services-divider reveal">
+        <h3 class="services-sub-title"><span class="lang-zh">我的核心價值</span><span class="lang-en">My Core Values</span></h3>
+      </div>
+
+      <div class="expertise-grid">
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">1</div>
+          <h3><span class="lang-zh">理解商業目標與問題</span><span class="lang-en">Understanding Business Goals</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">商業目標（營收、成本）</span><span class="lang-en">Business Goals (Revenue, Cost)</span></li>
+            <li><span class="lang-zh">產品指標（轉換率、留存率）</span><span class="lang-en">Product Goals (Conversion, Retention)</span></li>
+            <li><span class="lang-zh">利害關係人需求梳理</span><span class="lang-en">Stakeholder Needs Mapping</span></li>
+            <li><span class="lang-zh">可行性與風險識別</span><span class="lang-en">Feasibility & Risk Identification</span></li>
+          </ul>
+        </div>
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">2</div>
+          <h3><span class="lang-zh">洞察使用者脈絡與動機</span><span class="lang-en">Gaining User Insights</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">使用者訪談與問卷</span><span class="lang-en">User Interviews & Surveys</span></li>
+            <li><span class="lang-zh">行為數據分析</span><span class="lang-en">Behavioural Data Analysis</span></li>
+            <li><span class="lang-zh">競品研究</span><span class="lang-en">Competitive Analysis</span></li>
+            <li><span class="lang-zh">旅程地圖</span><span class="lang-en">Journey Mapping</span></li>
+          </ul>
+        </div>
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">3</div>
+          <h3><span class="lang-zh">產品策略與路線圖規劃</span><span class="lang-en">Product Strategy & Roadmap</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">機會規模評估</span><span class="lang-en">Opportunity Sizing</span></li>
+            <li><span class="lang-zh">問題定義與架構</span><span class="lang-en">Problem Framing</span></li>
+            <li><span class="lang-zh">路線圖架構與優先排序</span><span class="lang-en">Roadmap Architecture & Prioritisation</span></li>
+            <li><span class="lang-zh">利害關係人對齊</span><span class="lang-en">Stakeholder Alignment</span></li>
+          </ul>
+        </div>
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">4</div>
+          <h3><span class="lang-zh">系統設計與流程規劃</span><span class="lang-en">Systems Design & Flow</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">資訊架構與使用流程</span><span class="lang-en">Information Architecture & User Flow</span></li>
+            <li><span class="lang-zh">平台邏輯與後端規則</span><span class="lang-en">Platform Logic & Backend Rules</span></li>
+            <li><span class="lang-zh">訂閱與生命週期系統</span><span class="lang-en">Subscription & Lifecycle Systems</span></li>
+            <li><span class="lang-zh">金流與帳務流程</span><span class="lang-en">Payment & Billing Operations</span></li>
+          </ul>
+        </div>
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">5</div>
+          <h3><span class="lang-zh">跨團隊協作與推動執行</span><span class="lang-en">Cross-team Collaboration & Execution</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">需求規格撰寫與交付</span><span class="lang-en">Spec Writing & Handoff</span></li>
+            <li><span class="lang-zh">跨部門流程協調</span><span class="lang-en">Cross-functional Coordination</span></li>
+            <li><span class="lang-zh">驗收與 QA 協作</span><span class="lang-en">Acceptance Criteria & QA</span></li>
+            <li><span class="lang-zh">上線管理</span><span class="lang-en">Launch Management</span></li>
+          </ul>
+        </div>
+
+        <div class="expertise-card reveal">
+          <div class="expertise-num">6</div>
+          <h3><span class="lang-zh">數據驗證與持續優化</span><span class="lang-en">Data Validation & Improvement</span></h3>
+          <ul class="expertise-list">
+            <li><span class="lang-zh">指標定義與追蹤</span><span class="lang-en">Metric Definition & Tracking</span></li>
+            <li><span class="lang-zh">分群與留存分析</span><span class="lang-en">Cohort & Retention Analysis</span></li>
+            <li><span class="lang-zh">A/B 測試</span><span class="lang-en">A/B Testing</span></li>
+            <li><span class="lang-zh">迭代優化</span><span class="lang-en">Continuous Iteration</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- 合作方式（暫時隱藏） -->
+      <div class="services-divider reveal" style="display:none;">
+        <h3 class="services-sub-title"><span class="lang-zh">合作方式</span><span class="lang-en">Ways to Work Together</span></h3>
+        <p class="services-sub-desc"><span class="lang-zh">我接受需要結構化產品思維的自由接案與顧問合作，依專案需求彈性投入。</span><span class="lang-en">I take on freelance and consulting engagements that need structured product thinking — flexibly scoped to what your project actually requires.</span></p>
+      </div>
+
+      <div class="services-list" style="display:none;">
+
+        <div class="service-row reveal">
+          <div class="service-num">①</div>
+          <div class="service-body">
+            <h3><span class="lang-zh">產品策略顧問</span><span class="lang-en">Product Strategy Consulting</span></h3>
+            <p><span class="lang-zh">適合需要在動手解決之前先釐清問題架構的團隊，幫助建立機會地圖、路線圖框架與優先排序依據。</span><span class="lang-en">For teams that need to structure the problem before solving it — opportunity mapping, roadmap framing, and prioritisation criteria.</span></p>
+          </div>
+          <div class="service-scope">
+            <span class="scope-tag">4–8 weeks</span>
+            <span class="scope-tag">Strategy</span>
+          </div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-num">②</div>
+          <div class="service-body">
+            <h3><span class="lang-zh">系統架構審查</span><span class="lang-en">System Architecture Review</span></h3>
+            <p><span class="lang-zh">審查現有產品系統的訂閱流程、通知邏輯與生命週期觸發，找出缺口與可擴展性問題，並提出可執行的改善方向。</span><span class="lang-en">Audit existing product systems — subscription flows, notification logic, lifecycle triggers — to surface gaps, redundancies, and scalability issues with actionable next steps.</span></p>
+          </div>
+          <div class="service-scope">
+            <span class="scope-tag">2–4 weeks</span>
+            <span class="scope-tag">Systems</span>
+          </div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-num">③</div>
+          <div class="service-body">
+            <h3><span class="lang-zh">產品營運建置</span><span class="lang-en">Product Operations Setup</span></h3>
+            <p><span class="lang-zh">協助產品團隊建立可運作的營運骨架：指標框架、文件系統、跨部門工作流程與決策機制。</span><span class="lang-en">Help product teams build an operational backbone that actually works — metrics frameworks, documentation systems, cross-functional workflows, and decision processes.</span></p>
+          </div>
+          <div class="service-scope">
+            <span class="scope-tag">Ongoing</span>
+            <span class="scope-tag">Operations</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 03 Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span class="lang-zh">經歷</span><span class="lang-en">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-row reveal">
+          <div class="timeline-year">2025/02 — Now</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role"><span class="lang-zh">產品規劃師</span><span class="lang-en">Product Planner</span></h3>
+            <p class="timeline-org">momo 富邦媒體科技</p>
+            <p class="timeline-desc"><span class="lang-zh">主導 1.4 萬+ 供應商 mo 點購買系統從 0 到 1 建置，整合三個系統帳務邏輯，協調 8 位利害關係人確保流程正確性。同步推動折價券系統化專案，將業務需求轉譯為可落地的產品規格，並整合行銷、業務、客服跨部門需求完成技術可行性評估。</span><span class="lang-en">Led the 0-to-1 build of a mo points purchasing system for 14,000+ vendors, integrating billing logic across three systems and aligning 8 stakeholders. Simultaneously drove a coupon system overhaul, translating business needs into actionable PRDs and eliminating manual processes end-to-end.</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal">
+          <div class="timeline-year">2023/05 — 2025/02</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role"><span class="lang-zh">數位平台產品 PM</span><span class="lang-en">Digital Platform PM</span></h3>
+            <p class="timeline-org">UDN 聯合報</p>
+            <p class="timeline-desc"><span class="lang-zh">從 0 到 1 規劃 CDP 後台系統，整合 50 萬+ 會員與 1 萬+ 訂戶資料，驅動行銷精準化經營。主導訂閱生命週期數據分析與通知信策略優化，成功挽回 10 萬+ 營收；透過用戶訪談研究推動產品改善，使用戶參與度提升 24%。</span><span class="lang-en">Built a CDP platform from scratch integrating 500,000+ members and 10,000+ subscribers to enable precision marketing. Optimised subscription lifecycle communications to recover 100,000+ NTD in revenue, and drove a 24% engagement lift through user interview-informed product improvements.</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-row reveal">
+          <div class="timeline-year">2021/10 — 2023/01</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role"><span class="lang-zh">UX/UI 設計師 & 專案經理</span><span class="lang-en">UX/UI Designer & Project Manager</span></h3>
+            <p class="timeline-org">Algotech 新加坡商艾高科技</p>
+            <p class="timeline-desc"><span class="lang-zh">以單一設計師身分進行質化用戶研究並優化操作流程，提升產品易用性 42%，並主導東南亞四大市場（新加坡、菲律賓、印尼、越南）在地化設計。帶領 5 人工程團隊落實 Scrum 開發流程，有效降低專案延遲率 10%。</span><span class="lang-en">As a solo designer, conducted qualitative user research and flow optimisation, improving usability by 42%, and led localisation across four Southeast Asian markets. Managed a 5-person engineering team using Scrum, reducing project delays by 10%.</span></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 04 Contact -->
+    <section class="section" id="contact">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span class="lang-zh">聯絡我</span><span class="lang-en">Contact</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-desc">
+            <span class="lang-zh">如果你正面對複雜的產品問題——混亂的系統、不清晰的策略或營運摩擦——我想聽你說說看。</span><span class="lang-en">If you're dealing with a complex product problem — messy systems, unclear strategy, or operational friction — I'd like to hear about it.</span>
+          </p>
+          <div class="contact-links">
+            <a href="mailto:niveachen423@gmail.com" class="contact-row">
+              <span class="contact-type">Email</span>
+              <span class="contact-value">niveachen423@gmail.com →</span>
+            </a>
+            <a href="#" class="contact-row">
+              <span class="contact-type">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/yourname →</span>
+            </a>
+          </div>
+          <a href="assets/resume/resume.pdf" class="btn-primary" download>
+            <span class="lang-zh">履歷下載 ↓</span><span class="lang-en">Download Resume ↓</span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <input type="hidden" name="_subject" value="Portfolio Contact" />
+          <div class="form-group">
+            <label><span class="lang-zh">姓名</span><span class="lang-en">Name</span></label>
+            <input type="text" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label><span class="lang-zh">電子郵件</span><span class="lang-en">Email</span></label>
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label><span class="lang-zh">你在做什麼？</span><span class="lang-en">What are you working on?</span></label>
+            <textarea name="message" placeholder="Describe the problem or project..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <span class="lang-zh">送出訊息 →</span><span class="lang-en">Send Message →</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2026 Nivea. <span class="lang-zh">用心打造。</span><span class="lang-en">Built with intent.</span></span>
+      <a href="#work" class="footer-top"><span class="lang-zh">回頂端 ↑</span><span class="lang-en">Back to top ↑</span></a>
+    </footer>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

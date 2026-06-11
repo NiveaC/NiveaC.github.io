@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>廠商購買 mo 點 — Nivea</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/case-study.css" />
+</head>
+<body class="case-body">
+
+  <nav class="case-nav">
+    <a href="../index.html" class="case-back">← Back to Portfolio</a>
+    <span class="case-nav-title">mo 點購買 × 促銷活動系統</span>
+    <a href="../assets/resume/resume.pdf" class="btn-resume" download>Resume ↓</a>
+  </nav>
+
+  <main class="case-main">
+    <div class="case-layout">
+
+      <!-- Left Sidebar -->
+      <aside class="case-sidebar">
+        <span class="sidebar-heading">目錄</span>
+        <nav class="sidebar-nav">
+          <a href="#s-background" class="sidebar-link">
+            <span class="sidebar-num">01</span><span class="sidebar-label">背景</span>
+          </a>
+          <a href="#s-problem" class="sidebar-link">
+            <span class="sidebar-num">02</span><span class="sidebar-label">問題</span>
+          </a>
+          <a href="#s-design" class="sidebar-link">
+            <span class="sidebar-num">03</span><span class="sidebar-label">設計</span>
+          </a>
+          <a href="#s-approach" class="sidebar-link">
+            <span class="sidebar-num">04</span><span class="sidebar-label">執行</span>
+          </a>
+          <a href="#s-decision" class="sidebar-link">
+            <span class="sidebar-num">05</span><span class="sidebar-label">決策</span>
+          </a>
+          <a href="#s-impact" class="sidebar-link">
+            <span class="sidebar-num">06</span><span class="sidebar-label">成果</span>
+          </a>
+          <a href="#s-reflection" class="sidebar-link">
+            <span class="sidebar-num">07</span><span class="sidebar-label">反思</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Right: Hero + Overview + Sections -->
+      <div class="case-right">
+
+        <!-- Hero -->
+        <header class="case-hero reveal">
+          <div class="case-hero-meta">
+            <span class="case-pill">Payment Operations</span>
+            <span class="case-pill">Platform Integration</span>
+            <span class="case-pill">B2B · SCM</span>
+          </div>
+          <h1 class="case-title">廠商購買 mo 點<br>× 促銷活動系統</h1>
+          <p class="case-subtitle">
+            在從未有過金流的供應商後台，從零建立購買機制與帳務流程——串接 4 個系統，讓廠商能自主購買 mo 點用於評價加碼、客服補償等場景，同時確保每一筆帳務完全可稽核。
+          </p>
+          <div class="case-stats">
+            <div class="stat-item">
+              <span class="stat-value">4</span>
+              <span class="stat-label">跨系統資料串接</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">150+</span>
+              <span class="stat-label">上線後購買廠商數（共 1.4 萬間）</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">20+</span>
+              <span class="stat-label">廠商活動場次（上線首月）</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">—</span>
+              <span class="stat-label">總購買金額（統計中）</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Overview bar -->
+        <div class="case-overview reveal">
+          <div class="overview-item">
+            <span class="overview-label">Role</span>
+            <span class="overview-value">Lead PM</span>
+          </div>
+          <div class="overview-item">
+            <span class="overview-label">Systems</span>
+            <span class="overview-value">SCM × NS × 問問 × ECM</span>
+          </div>
+          <div class="overview-item">
+            <span class="overview-label">Spec 版本</span>
+            <span class="overview-value">v1.0 → v4.0<br>需求單 #59438</span>
+          </div>
+          <div class="overview-item">
+            <span class="overview-label">Launch</span>
+            <span class="overview-value">Mar 2026（購買 mo 點）<br>Apr 2026（評價加碼）</span>
+          </div>
+        </div>
+
+        <!-- Content sections -->
+        <div class="case-content">
+
+          <!-- 01 背景 -->
+          <section id="s-background" class="case-section reveal">
+            <div class="case-section-label">01 · Background</div>
+            <h2 class="case-section-title">供應商的自主性，一直是缺口</h2>
+            <p>
+              在這個專案之前，momo 平台上的廠商幾乎沒有辦法自行發起任何促銷活動。所有行銷資源的配置都需要透過平台端協助，供應商缺乏主動性，也缺乏誘因去主動優化自己的商品表現。
+            </p>
+            <p>
+              這個專案是一個更大供應商賦權計畫的起點。在 EC 營運部的策略方向下，我負責規劃整套需求，讓廠商能透過供應商後台（SCM）自主購買 mo 點，作為評價加碼活動的贈品，或是透過問問聊天室即時補償客人。
+            </p>
+            <div class="case-callout">
+              <span class="callout-label">Strategic Context</span>
+              <p>此專案為廠商自主活動系列的第一塊積木。後續的廠商自建折價券功能亦由我同步規劃。mo 點機制的建立，為整個廠商促銷生態系打下基礎。</p>
+            </div>
+          </section>
+
+          <!-- 02 問題 -->
+          <section id="s-problem" class="case-section reveal">
+            <div class="case-section-label">02 · Problem</div>
+            <h2 class="case-section-title">兩個高頻場景，卡在同一個缺口</h2>
+            <p>訪談客服營運與行銷團隊後，發現他們被同一件事卡住：廠商想出錢補償客人、想贊助活動，但平台沒有任何方式讓他們把錢「買進來」。</p>
+
+            <div class="scenario-grid">
+              <div class="scenario-card">
+                <span class="scenario-tag">① 問問聊天室</span>
+                <p>客服在對話框面對「少出 2 件」的客訴，明知道應該立刻補償 mo 點——但系統裡根本沒有供給來源，只能事後人工補單。客人等了幾天才收到補償，體驗落差極大。</p>
+              </div>
+              <div class="scenario-card">
+                <span class="scenario-tag">② 評價加碼活動</span>
+                <p>行銷想推廠商贊助的「留評論得 mo 點」活動，廠商也有意願。但廠商沒有渠道把錢買進平台，活動只能靠平台補貼，難以規模化，更無法稽核帳務。</p>
+              </div>
+            </div>
+
+            <p>表面上這是讓廠商購買點數的功能，但真正的挑戰是：供應商後台從來沒有處理過任何付款行為。要讓這件事發生，需要同時解決三個層次的問題：</p>
+
+            <div class="problem-grid">
+              <div class="problem-card">
+                <div class="problem-num">01</div>
+                <h3>金流基礎設施從零開始</h3>
+                <p>SCM 供應商後台完全沒有金流基礎——沒有付款介面、沒有發票流程、沒有帳務對接邏輯。一切都是新建。</p>
+              </div>
+              <div class="problem-card">
+                <div class="problem-num">02</div>
+                <h3>4 個系統的資料必須精準串接</h3>
+                <p>購買行為涉及 SCM（供應商後台）、NS（請款系統）、問問（客服平台）、ECM（電商管理後台）四方。任何資料不一致都會造成帳務錯誤。</p>
+              </div>
+              <div class="problem-card">
+                <div class="problem-num">03</div>
+                <h3>購買額度計算邏輯高度複雜</h3>
+                <p>廠商可購買的 mo 點上限，需根據當月貨款、前期欠款、預付貨款、雙周結等多個變數動態計算，且每月 1 日貨款歸零的邊界情境也需要特別處理。</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 購買公式 -->
+          <section id="s-design" class="case-section reveal">
+            <div class="case-section-label">03 · System Design</div>
+            <h2 class="case-section-title">最複雜的一塊：動態購買額度公式</h2>
+            <p>
+              廠商每次購買前，系統需要即時計算可用額度。這個公式在專案進行中多次迭代，最終版本為：
+            </p>
+
+            <div class="formula-block">
+              <div class="formula-title">mo 點可購買額度 =</div>
+              <div class="formula-body">
+                （供應商當月貨款 － 前期欠款 － 已確認預付貨款 － 雙周結）× 20%<br>
+                － 當月已購買 mo 點金額
+              </div>
+              <div class="formula-note">
+                * 雙周結：非富昇、非電子票券且結帳類型為「半月結」的廠商，15 日後需額外扣除 16 日～D-1 日的結算金額
+              </div>
+            </div>
+
+            <p>
+              公式的每個變數都對應不同系統的資料來源，我需要確認每一個欄位從哪個系統抓、以哪個時間點的資料為準，以及月初貨款歸零的邊界情境如何處理。
+            </p>
+
+            <div class="case-callout">
+              <span class="callout-label">Iteration Note</span>
+              <p>需求規格從 v1.0 歷經 4 個版本演進：v3.0 加入雙周結與預支貨款邏輯、v4.0 將「mo幣」統一更名為「mo點」、上線後再因應新增預付貨款類型追加週結邏輯。</p>
+            </div>
+          </section>
+
+          <!-- 04 執行方法 -->
+          <section id="s-approach" class="case-section reveal">
+            <div class="case-section-label">04 · Approach</div>
+            <h2 class="case-section-title">從基礎設施開始，往應用場景延伸</h2>
+
+            <div class="approach-list">
+              <div class="approach-item reveal">
+                <div class="approach-marker">①</div>
+                <div class="approach-body">
+                  <h3>金流可行性研究</h3>
+                  <p>在 SCM 從未有過金流的情況下，我先研究現有系統架構與財務流程限制，釐清金流要如何接入、發票要怎麼產生、以及與 NS 請款系統的對接規格。這個前期研究確立整體技術方向，避免開發中途翻案。</p>
+                </div>
+              </div>
+
+              <div class="approach-item reveal">
+                <div class="approach-marker">②</div>
+                <div class="approach-body">
+                  <h3>定義購買額度計算邏輯</h3>
+                  <p>與財務、系統、MD 團隊協作，確認動態購買額度公式的每個變數來源與計算時機，並處理月初貨款歸零、雙周結廠商等邊界情境，確保廠商不會超額購買。</p>
+                </div>
+              </div>
+
+              <div class="approach-item reveal">
+                <div class="approach-marker">③</div>
+                <div class="approach-body">
+                  <h3>規劃帳務流程 D/D+1 機制</h3>
+                  <p>設計購買當日（D）立即生效、隔日（D+1 凌晨 2:30）自動開立發票的流程，並確認發票拋轉至 NS、上傳電子發票平台的時序。每日 9:00 執行發票與 TT 資料的檢核通知機制，確保帳務可稽核。</p>
+                </div>
+              </div>
+
+              <div class="approach-item reveal">
+                <div class="approach-marker">④</div>
+                <div class="approach-body">
+                  <h3>串接三個 mo 點應用場景</h3>
+                  <p>
+                    在購買基礎建立後，進一步規劃三個 mo 點應用場景的需求：<br>
+                    ・<strong>問問聊天室即時贈送</strong>：Web 與 APP 雙版本，客服人員可直接在對話框補償 mo 點<br>
+                    ・<strong>評價加碼活動</strong>：預扣制，廠商設定活動條件，買家留評後自動觸發歸戶<br>
+                    ・<strong>退貨流程</strong>：設計廠商終止合作時的 mo 點餘額清零與對應銷折流程
+                  </p>
+                </div>
+              </div>
+
+              <div class="approach-item reveal">
+                <div class="approach-marker">⑤</div>
+                <div class="approach-body">
+                  <h3>建立 ECM 內部查詢機制</h3>
+                  <p>在電商管理後台（ECM）新增廠商 mo 點購買／使用紀錄查詢功能，供內部 MD 與營運查詢廠商的 mo 點餘額、異動明細，及購買歷史，確保平台端對帳務有完整掌握。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 05 Key Decision -->
+          <section id="s-decision" class="case-section reveal">
+            <div class="case-section-label">05 · Key Decision</div>
+            <h2 class="case-section-title">五個讓專案能被信任的設計決策</h2>
+            <p>PM 的價值不在規格有多詳細，而在「不確定中做出哪些取捨」。以下是這個專案中影響最深的決策。</p>
+
+            <div class="decisions-list">
+
+              <div class="decision-item reveal">
+                <div class="decision-meta">
+                  <span class="decision-num">01</span>
+                  <span class="decision-tradeoff">先研究 vs. 先開發</span>
+                </div>
+                <h3 class="decision-title">先做金流可行性研究，再寫第一行規格</h3>
+                <p>面對一個完全沒有金流基礎的系統，直覺反應是直接開始畫購買流程。但我選擇先退一步，花時間研究現有系統的財務架構、NS 請款系統的對接方式、以及發票流程的技術限制。</p>
+                <p>這個決策後來被證明是正確的——公式中的「預付貨款」、「雙周結」邏輯，都是在前期研究中才被挖出來的邊界情境。如果跳過這個步驟，這些問題會在上線前才被發現，修改成本會高得多。</p>
+              </div>
+
+              <div class="decision-item reveal">
+                <div class="decision-meta">
+                  <span class="decision-num">02</span>
+                  <span class="decision-tradeoff">廠商現金流 vs. 客人體驗不可逆</span>
+                </div>
+                <h3 class="decision-title">預扣制——確保客人一定拿得到承諾的點數</h3>
+                <p>評價加碼最容易出問題的場景是：廠商發布活動 → 客人努力寫評論 → 廠商點數不夠了 → 客人沒拿到承諾的點數 → 客訴。這種體驗損害是不可逆的。</p>
+                <p>我選擇預扣制：活動發佈時即從廠商點數池預扣全額，活動結束後未用完的金額隔天退還。再加上單則上限 10 mo 點，讓廠商在保護現金流的前提下參與活動。代價是廠商的點數被短暫綁住，換來的是「客人體驗的確定性」。</p>
+              </div>
+
+              <div class="decision-item reveal">
+                <div class="decision-meta">
+                  <span class="decision-num">03</span>
+                  <span class="decision-tradeoff">短期 GMV vs. 廠商生態長期健康</span>
+                </div>
+                <h3 class="decision-title">20% 安全閥——不讓廠商買到傷害出貨能力</h3>
+                <p>技術上可以讓廠商把當月所有可動用貨款都拿來買 mo 點，GMV 拉得更快。但廠商若衝動購點後沒有足夠貨款出貨，損害的是客人的購物體驗和平台信任。</p>
+                <p>我與財務團隊反覆討論後，把可購買額度設定為當月可動用貨款的 20%。這是明確的 trade-off——犧牲短期業績，換取廠商生態的長期健康，這是需要能向 leadership 解釋的取捨。</p>
+              </div>
+
+              <div class="decision-item reveal">
+                <div class="decision-meta">
+                  <span class="decision-num">04</span>
+                  <span class="decision-tradeoff">v1 看起來複雜 vs. 預留擴充空間</span>
+                </div>
+                <h3 class="decision-title">可擴充的公式架構——省下三次重構的成本</h3>
+                <p>購買額度公式在 v1 只有最基本的扣項，但我從一開始就把它設計成「可加項陣列」而非固定算式。當 v3（2025/11）要加入雙周結、預支½貨款，以及 2026/03 要加入銀科週結時，都不需要打掉重做，只需新增一個扣項。</p>
+                <p>這是 0→1 PM 應該為團隊預留的設計空間。回頭看，這個在 v1 看起來「多做」的設計，後來省下了三次重構的成本。</p>
+              </div>
+
+              <div class="decision-item reveal">
+                <div class="decision-meta">
+                  <span class="decision-num">05</span>
+                  <span class="decision-tradeoff">辯護原設計 vs. 承認錯誤快速修正</span>
+                </div>
+                <h3 class="decision-title">發票日期 = 購買日期——PM 不是 PRD 簽完就結束</h3>
+                <p>v1 設計時，發票日期設為購買日+1天（因為 D+1 凌晨才開立）。但上線後發現，跨月份場景下（如 9/30 購買、發票日顯示 10/1）廠商和財務都對不上帳，造成反覆客訴。</p>
+                <p>2026/03 我推動修正為「發票日期 = 購買日期」，即使這代表需要把發票開立時點與日期欄位解耦，工程量不小。設計缺陷不會在上線時就消失，PM 需要對上線後的真實問題持續負責。</p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- 06 Impact -->
+          <section id="s-impact" class="case-section reveal">
+            <div class="case-section-label">06 · Impact</div>
+            <h2 class="case-section-title">上線後的結果</h2>
+
+            <div class="before-after reveal">
+              <div class="ba-before">
+                <div class="ba-header ba-header--before">Before</div>
+                <ul class="ba-list">
+                  <li>廠商無管道，只能人工申請 mo 點</li>
+                  <li>帳務靠 Excel 人工對帳，出錯風險高</li>
+                  <li>客服補償需事後人工補單，延遲數天</li>
+                  <li>評價加碼活動只能靠平台補貼，無法規模化</li>
+                </ul>
+              </div>
+              <div class="ba-divider">→</div>
+              <div class="ba-after">
+                <div class="ba-header ba-header--after">After</div>
+                <ul class="ba-list">
+                  <li>SCM 後台自助購買，立即生效</li>
+                  <li>D+1 自動開發票 + 每日跨系統雙向對帳</li>
+                  <li>問問聊天室即時贈送（Web + APP）</li>
+                  <li>廠商自主建立活動，預扣制確保兌現</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="impact-grid">
+              <div class="impact-card">
+                <div class="impact-date">Mar 2026</div>
+                <h3>購買 mo 點 × 問問贈送上線</h3>
+                <p>廠商首次能透過後台自主購買 mo 點，並即時補償買家。SCM、NS、問問三系統的帳務資料完整串接。</p>
+              </div>
+              <div class="impact-card impact-card--highlight">
+                <div class="impact-date">Apr 2026</div>
+                <h3>評價加碼活動上線</h3>
+                <p>廠商可自行設定評價獎勵條件，買家留評後自動觸發 mo 點歸戶。</p>
+              </div>
+              <div class="impact-card">
+                <div class="impact-date">May 2026</div>
+                <h3>20+ 場廠商活動，評價正向成長</h3>
+                <p>上線首月廠商自主建立活動超過 20 場，平台整體評價數量呈正向增加。</p>
+              </div>
+            </div>
+
+            <div class="impact-numbers reveal">
+              <div class="impact-num-item">
+                <span class="impact-num">150<span class="impact-unit">+</span></span>
+                <span class="impact-num-label">廠商完成購買<br><small>佔整體 1.4 萬間供應商</small></span>
+              </div>
+              <div class="impact-num-item">
+                <span class="impact-num">—</span>
+                <span class="impact-num-label">總購買金額<br><small>統計中，稍後更新</small></span>
+              </div>
+              <div class="impact-num-item">
+                <span class="impact-num">4</span>
+                <span class="impact-num-label">版本規格迭代<br><small>v1.0 → v4.0</small></span>
+              </div>
+            </div>
+
+            <div class="case-callout case-callout--positive reveal">
+              <span class="callout-label">Broader Impact</span>
+              <p>這個專案在 SCM 建立了第一套可運作的金流基礎架構。它不只完成了「購買 mo 點」功能本身，更讓後續廠商自建折價券、滿件滿額贈 mo 點等功能，有了可以直接延伸的系統基礎。</p>
+            </div>
+          </section>
+
+          <!-- 07 Reflection -->
+          <section id="s-reflection" class="case-section reveal">
+            <div class="case-section-label">07 · Reflection</div>
+            <h2 class="case-section-title">這個專案讓我學到什麼</h2>
+            <p>
+              在一個完全沒有金流基礎的系統裡建立金流，最大的挑戰不是技術本身，而是「如何在不確定中建立確定性」。這個專案讓我體驗到，一份需求規格的品質，會直接決定開發的順暢度。
+            </p>
+            <p>
+              跨 4 個系統的帳務串接，也讓我更清楚地意識到：產品的帳務準確性，是廠商信任的底線。一個數字錯了，對廠商而言不只是 bug，而是他們願不願意繼續使用這個平台的問題。做到「正確」是最低門檻，而不是加分項。
+            </p>
+          </section>
+
+        </div><!-- /case-content -->
+
+        <!-- Footer -->
+        <div class="case-footer reveal">
+          <a href="../index.html#work" class="case-footer-back">← All Projects</a>
+          <div class="case-next">
+            <span class="next-label">Next Project</span>
+            <a href="#" class="next-title">廠商自建折價券系統 →</a>
+          </div>
+        </div>
+
+      </div><!-- /case-right -->
+    </div><!-- /case-layout -->
+  </main>
+
+  <script src="../js/script.js"></script>
+  <script>
+    const caseSections = document.querySelectorAll('.case-section[id]');
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+    const activateLink = (id) => {
+      sidebarLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+
+    if (caseSections.length) activateLink(caseSections[0].id);
+
+    const sidebarObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) activateLink(entry.target.id);
+      });
+    }, { threshold: 0.15, rootMargin: '-76px 0px -55% 0px' });
+
+    caseSections.forEach(section => sidebarObserver.observe(section));
+  </script>
+</body>
+</html>
