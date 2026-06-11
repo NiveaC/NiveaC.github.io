@@ -1,0 +1,44 @@
+[
+  {
+    "order": 1,
+    "number": "01",
+    "tag": "Payment Operations · Platform Integration",
+    "title": "1.4 萬＋廠商後台：從 0 到 1 建置 mo 點金流，讓促銷活動與客訴補償更彈性",
+    "description": "打通供應商後台金流，讓 1.4 萬間廠商得以自主購買 mo 點、發起評價加碼活動、補償買家——同時確保三個平台的帳務資料完全一致。",
+    "role": "Lead PM",
+    "platform": "供應商後台 × momo",
+    "year": "2026 Q1",
+    "insight_label": "Key Decision",
+    "insight": "在沒有任何金流基礎的系統上建立付款流程，選擇先做前期金流研究確立架構方向，再協調三平台資料串接，確保帳務準確性。上線後 150 間廠商完成購買，活動場次達 20+ 場。",
+    "link": "cases/mo-points.html",
+    "published": true
+  },
+  {
+    "order": 2,
+    "number": "02",
+    "tag": "UX Research · User Interview · Healthcare App",
+    "title": "3 個月實戰營 × UX 研究：找出照護平台媒合率低的真實原因",
+    "description": "平台上線後使用率偏低、媒合率不理想。透過問卷（n=112）與深度訪談（n=6），找出照護者真正的痛點與線上諮詢的信任障礙，產出三個核心洞察與可落地的產品建議。",
+    "role": "UX 研究員 · 組長",
+    "platform": "Healthcare App",
+    "year": "2023",
+    "insight_label": "Key Insight",
+    "insight": "問題不在介面，而在市場教育順序搞錯——照護者根本不知道「線上諮詢護理師」這個選項存在。信任建立之前，轉換策略都是徒勞的。",
+    "link": "cases/instacare.html",
+    "published": true
+  },
+  {
+    "order": 3,
+    "number": "03",
+    "tag": "UX / UI Design · SaaS · 管理系統",
+    "title": "步驟縮短 37%、學習時間從 7 分鐘降至 3 分鐘：Live Show Seller 系統優化",
+    "description": "系統功能散亂、入口混亂，讓直播賣家操作時手忙腳亂。透過重建資訊架構、整合核心操作流程，讓完成一場直播銷售的步驟從 8 步縮減至 5 步。",
+    "role": "UI/UX Designer · 專案管理",
+    "platform": "SaaS B2B",
+    "year": "2022",
+    "insight_label": "Key Decision",
+    "insight": "將「建立活動」與「加入商品」從兩個獨立入口整合為一條龍流程，並重建資訊架構讓主要操作在三層內完成——操作步驟減少 37%，學習時間從 7 分鐘降至 3 分鐘。",
+    "link": "cases/live-show-seller.html",
+    "published": true
+  }
+]

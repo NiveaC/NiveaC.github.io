@@ -8,7 +8,52 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+function observeReveal(root) {
+  root.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+}
+observeReveal(document);
+
+// Case cards — rendered from data/cases.json
+(async () => {
+  const list = document.getElementById('caseList');
+  if (!list) return;
+
+  try {
+    const base = document.querySelector('base')?.href || location.href.replace(/[^/]*$/, '');
+    const res = await fetch(base + 'data/cases.json');
+    const cases = await res.json();
+
+    list.innerHTML = cases
+      .filter(c => c.published)
+      .map(c => `
+        <div class="case-card reveal">
+          <div class="case-meta">
+            <span class="case-number">${c.number}</span>
+            <span class="case-tag">${c.tag}</span>
+          </div>
+          <h3 class="case-title">${c.title}</h3>
+          <p class="case-desc">${c.description}</p>
+          <div class="case-details">
+            <span class="case-detail">Role: ${c.role}</span>
+            <span class="case-detail">Platform: ${c.platform}</span>
+            <span class="case-detail">${c.year}</span>
+          </div>
+          <div class="case-insight">
+            <span class="insight-label">${c.insight_label}</span>
+            <span class="insight-text">${c.insight}</span>
+          </div>
+          <a href="${c.link}" class="case-link">
+            <span class="lang-zh">閱讀案例 →</span>
+            <span class="lang-en">Read Case Study →</span>
+          </a>
+        </div>
+      `).join('');
+
+    observeReveal(list);
+  } catch (e) {
+    console.warn('無法載入 cases.json，請確認檔案存在。', e);
+  }
+})();
 
 // Scroll spy — highlight active nav link
 const sections = document.querySelectorAll('.section');
