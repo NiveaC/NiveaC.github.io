@@ -71,6 +71,10 @@
 /* ===== Reset ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  background: var(--bg-main);
+}
+
 body {
   background: var(--bg-main);
   color: var(--text-main);
@@ -85,12 +89,20 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 input, textarea { font: inherit; }
 
 /* ===== Layout ===== */
+.page-frame {
+  width: 85%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+}
+
 .sidebar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: var(--sidebar-width);
   height: 100vh;
+  flex-shrink: 0;
   background: var(--sidebar-bg);
   border-right: 1px solid rgba(190, 183, 167, 0.7);
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.09);
@@ -102,7 +114,8 @@ input, textarea { font: inherit; }
 }
 
 .main-content {
-  margin-left: var(--sidebar-width);
+  flex: 1;
+  min-width: 0;
   min-height: 100vh;
 }
 
@@ -1179,10 +1192,17 @@ body.use-en .lang-zh { display: none; }
 @media (max-width: 768px) {
   .mobile-header { display: flex; }
 
+  .page-frame {
+    width: 100%;
+    display: block;
+  }
+
   .sidebar {
+    position: fixed;
     top: 56px;
     left: auto;
     right: 0;
+    width: 280px;
     height: calc(100vh - 56px);
     transform: translateX(100%);
     transition: transform 0.3s ease;
